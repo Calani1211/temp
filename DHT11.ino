@@ -16,9 +16,9 @@ void loop()
 {
   dht11.update();
 
-  C = dht11.readCelsius();   
-  F = dht11.readFahrenheit();
-  H = dht11.readHumidity();     
+  float C = dht11.readCelsius();   
+  float F = dht11.readFahrenheit();
+  float H = dht11.readHumidity();     
 
   Serial.print("H: ");
   Serial.print(H);
